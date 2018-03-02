@@ -1,0 +1,41 @@
+<h1 id="title" class="alert-success" >Mailbox</h1>
+
+
+<div class="container">
+
+	<div id="maillist" class="col-md-5">
+
+		<table class="table table-bordered table-striped">
+			<thead>
+				<tr>
+					<th>Emails</th>
+				</tr>
+			</thead>
+
+			<tbody class="email-index">
+
+			<% @emails.each do |t| %>
+				<tr>
+					<td class="email-object">
+					
+
+						  	<%= link_to email_path(t), remote: true do %>		
+						  		<%= t.object %>
+						  	<%end%>
+
+					</td>
+				</tr>
+			<% end %>
+			</tbody>
+			
+		</table>
+
+	</div>
+
+
+
+	<div id="mailtext" class="col-md-77">
+		<p>Click on an email to display its content</p>
+	</div>
+
+</div>

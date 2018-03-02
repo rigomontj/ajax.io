@@ -1,0 +1,27 @@
+body {
+	height: 100%;
+	width: 100%;
+	margin:0;
+	padding:0;
+	background-color: #444F;
+}
+
+#title {
+	text-align: center;
+	font-weight: bold;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	background-color: aqua;
+}
+
+#email-list {
+	flex:1;
+}
+
+#mailtext {
+	flex:2;
+	text-align:justify;
+}
